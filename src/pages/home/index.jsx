@@ -3,7 +3,7 @@ import Banner from "../../components/banner"
 
 import styles from "./style.module.css"
 import posts from "../../assets/json/posts.json"
-import Post from "../../components/post";
+import PostCard from "../../components/post-card";
 
 export default function Home() {
     return <main>
@@ -11,7 +11,7 @@ export default function Home() {
         <ul className={styles.posts}>
             {posts.map((post) => (
                 <li key={post.id}>
-                    <Post post={post}/>
+                    <PostCard post={post}/>
                 </li>
             ))}
         </ul>

@@ -1,6 +1,6 @@
 import styles from "./style.module.css"
 
-export default function Post({post}){
+export default function PostCard({post}){
 
     const capa = require(`../../assets/posts/${post.id}/capa.png`)
 
