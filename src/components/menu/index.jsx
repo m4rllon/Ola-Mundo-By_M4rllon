@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styles from './style.module.css'
 import MenuLink from '../menu-link'
 

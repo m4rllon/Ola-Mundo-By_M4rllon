@@ -7,7 +7,6 @@ import PostCard from "../../components/post-card";
 
 export default function Home() {
     return <main>
-        <Banner/>
         <ul className={styles.posts}>
             {posts.map((post) => (
                 <li key={post.id}>

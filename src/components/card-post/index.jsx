@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import styles from "./style.module.css"
-import MainButton from "../main-button"
 
-export default function PostCard({post}){
+export default function CardPost({post}){
+
     const capa = require(`../../assets/posts/${post.id}/capa.png`)
 
     return(
@@ -17,7 +17,7 @@ export default function PostCard({post}){
                     {post.titulo}
                 </h2>
 
-                <MainButton text={"Ler"}/>
+                <button className={styles.botaoLer}>Ler</button>
             </div>
         </Link>
     )
